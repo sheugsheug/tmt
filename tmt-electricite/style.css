@@ -49,10 +49,38 @@ header {
     padding: 15px 20px;
 }
 
+/* --- Cherchez la partie .logo existante et remplacez-la par ceci --- */
+
 .logo {
+    display: flex;          /* Permet d'aligner l'image et le texte côte à côte */
+    align-items: center;    /* Centre verticalement l'image et le texte */
+    gap: 15px;              /* Espace entre l'image et le texte */
     font-size: 1.5rem;
     font-weight: bold;
     color: var(--primary);
+    text-decoration: none;  /* Enlève le soulignement si présent */
+}
+
+/* Nouveau : on contrôle la taille de l'image pour ne pas casser le menu */
+.logo img {
+    height: 50px;           /* Hauteur fixe (ajustez selon votre logo, ex: 40px à 60px) */
+    width: auto;            /* Conserve les proportions */
+    object-fit: contain;    /* S'assure que l'image ne soit pas écrasée */
+}
+
+.logo span { 
+    color: var(--secondary); 
+}
+
+/* Optionnel : Ajustement pour mobile pour que le logo ne soit pas trop gros */
+@media (max-width: 768px) {
+    .logo img {
+        height: 40px;
+    }
+    .logo {
+        font-size: 1.2rem;
+    }
+}
 }
 .logo span { color: var(--secondary); }
 
