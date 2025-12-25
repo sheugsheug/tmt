@@ -48,7 +48,7 @@ header {
     max-width: 1200px;
     margin: 0 auto;
     padding: 10px 20px;
-    min-height: 80px;               /* Hauteur minimale garantie */
+    min-height: 200px;               /* Hauteur minimale garantie */
 }
 
 /* --- LOGO (Image) --- */
@@ -61,7 +61,7 @@ header {
 
 .logo img {
     display: block;
-    max-height: 60px; /* Taille MAX sur ordinateur */
+    max-height: 120px; /* Taille MAX sur ordinateur */
     width: auto;      /* Garde les proportions */
     object-fit: contain;
 }
