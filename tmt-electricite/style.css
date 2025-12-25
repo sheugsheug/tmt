@@ -232,3 +232,102 @@ footer {
 
     .hero h1 { font-size: 2rem; }
 }
+
+/* ================= BLOG & ARTICLES ================= */
+
+/* Cartes du blog (Listing) */
+.blog-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.blog-image {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+
+.blog-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.blog-meta {
+    font-size: 0.85rem;
+    color: #666;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.blog-tag {
+    background-color: var(--secondary);
+    color: white;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.blog-title {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+    color: var(--primary);
+    font-weight: bold;
+}
+
+.read-more {
+    margin-top: auto; /* Pousse le lien vers le bas */
+    color: var(--accent);
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Page Article Unique (Lecture) */
+.article-container {
+    max-width: 800px; /* Plus étroit pour une meilleure lecture */
+    margin: 0 auto;
+    background: var(--white);
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.article-body {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #444;
+}
+
+.article-body h2 {
+    color: var(--primary);
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+}
+
+.article-body h3 {
+    color: var(--secondary);
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.article-body ul {
+    list-style: disc;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.article-header-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
