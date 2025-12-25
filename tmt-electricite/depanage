@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dépannage Électrique Yvelines (78) | Urgence & Réparation - TMT</title>
+    <meta name="description" content="Panne de courant ? Court-circuit ? TMT Électricité intervient rapidement dans le 78 (Yvelines). Recherche de panne, réparation tableau, mise en sécurité.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Barre d'information -->
+    <div class="top-bar">Intervention rapide 78 Yvelines | 📞 01 23 45 67 89</div>
+
+    <!-- Header (Identique à l'accueil avec Logo Image) -->
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="Gemini_Generated_Image_w0khqfw0khqfw0kh.png" alt="Logo TMT Électricité" style="max-height: 60px; width: auto;">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="zone.html">Zone 78</a></li>
+                    <li><a href="propos.html">À Propos</a></li>
+                    <li><a href="contact.html" class="btn-cta">Demander un Devis</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section Spéciale Dépannage -->
+        <div class="hero" style="background: linear-gradient(rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 0.8)), url('https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&w=1920&q=80');">
+            <h1>Dépannage Électrique 78</h1>
+            <p>Intervention rapide pour vos pannes d'électricité, coupures et mises en sécurité dans les Yvelines.</p>
+            <div style="margin-top: 20px;">
+                <a href="tel:0123456789" class="btn-cta" style="background-color: #ef4444;">📞 URGENCE : 01 23 45 67 89</a>
+            </div>
+        </div>
+
+        <!-- Section Principale : Les types de pannes -->
+        <section>
+            <div class="section-title">
+                <h2>Nos Missions de Dépannage</h2>
+                <div class="line"></div>
+                <p style="margin-top: 15px; max-width: 800px; margin-left: auto; margin-right: auto;">
+                    Une panne électrique ne prévient pas. Nos techniciens qualifiés interviennent sur tous types d'installations (domestiques ou tertiaires) pour rétablir le courant en toute sécurité.
+                </p>
+            </div>
+
+            <div class="grid-3">
+                <!-- Carte 1 -->
+                <div class="card">
+                    <span class="card-icon">🔌</span>
+                    <h3>Coupure de courant</h3>
+                    <p>Coupure générale ou partielle (une seule pièce, une seule prise). Nous identifions la source du problème (disjoncteur défectueux, fil coupé) et rétablissons le courant.</p>
+                </div>
+
+                <!-- Carte 2 -->
+                <div class="card">
+                    <span class="card-icon">⚡</span>
+                    <h3>Tableau qui disjoncte</h3>
+                    <p>Votre disjoncteur saute dès que vous allumez un appareil ? C'est souvent le signe d'un court-circuit ou d'une surcharge. Nous isolons le circuit fautif.</p>
+                </div>
+
+                <!-- Carte 3 -->
+                <div class="card">
+                    <span class="card-icon">🔥</span>
+                    <h3>Surchauffe & Odeurs</h3>
+                    <p>Une prise qui chauffe, qui noircit ou une odeur de brûlé ? <strong>C'est une urgence.</strong> Nous remplaçons les composants fondus pour éviter tout risque d'incendie.</p>
+                </div>
+
+                <!-- Carte 4 -->
+                <div class="card">
+                    <span class="card-icon">🚿</span>
+                    <h3>Chauffage & Ballon d'eau</h3>
+                    <p>Dépannage de radiateurs électriques qui ne chauffent plus, de contacteurs jour/nuit ou de cumulus en panne d'alimentation.</p>
+                </div>
+
+                <!-- Carte 5 -->
+                <div class="card">
+                    <span class="card-icon">💡</span>
+                    <h3>Éclairage défaillant</h3>
+                    <p>Réparation de circuits d'éclairage, remplacement de télérupteurs, minuteries bloquées ou variateurs défectueux.</p>
+                </div>
+
+                <!-- Carte 6 -->
+                <div class="card">
+                    <span class="card-icon">🔍</span>
+                    <h3>Recherche de panne</h3>
+                    <p>Diagnostic précis avec outils de mesure professionnels pour trouver les pannes vicieuses ou intermittentes.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Sécurité / Processus -->
+        <section style="background-color: var(--light);">
+            <div class="grid-3" style="align-items: center;">
+                <div style="grid-column: span 2;">
+                    <h2>Comment se déroule une intervention ?</h2>
+                    <br>
+                    <ul style="list-style: none;">
+                        <li style="margin-bottom: 15px;">
+                            <strong>1. Prise de contact :</strong> Vous nous appelez, nous évaluons l'urgence et vous donnons une estimation tarifaire de déplacement.
+                        </li>
+                        <li style="margin-bottom: 15px;">
+                            <strong>2. Diagnostic sur place :</strong> L'électricien effectue les tests pour trouver l'origine exacte de la panne.
+                        </li>
+                        <li style="margin-bottom: 15px;">
+                            <strong>3. Devis avant réparation :</strong> Si une pièce coûteuse est à changer, nous vous présentons un devis clair. Pas de mauvaise surprise.
+                        </li>
+                        <li>
+                            <strong>4. Réparation immédiate :</strong> Nous disposons d'un stock de pièces courantes (disjoncteurs, prises, différentiels) dans nos camions.
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Encadré Sécurité -->
+                <div class="card" style="border-left: 5px solid #ef4444; border-bottom: none;">
+                    <h3 style="color: #ef4444;">⚠️ Conseil Sécurité</h3>
+                    <p>Si votre installation sent le brûlé ou fait des étincelles :</p>
+                    <ol style="margin-left: 20px; margin-top: 10px;">
+                        <li>Coupez le disjoncteur général.</li>
+                        <li>Ne touchez à rien (risque d'électrocution).</li>
+                        <li>Appelez un professionnel immédiatement.</li>
+                    </ol>
+                    <br>
+                    <a href="tel:0123456789" style="color: #ef4444; font-weight: bold; text-decoration: underline;">Appeler TMT Électricité</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Zone d'intervention rapide -->
+        <section>
+            <div class="section-title">
+                <h2>Zone d'intervention Dépannage</h2>
+                <p>Pour les urgences, nous nous efforçons d'intervenir dans l'heure sur les secteurs suivants :</p>
+            </div>
+            <div style="text-align: center;">
+                <p style="font-size: 1.1rem;">
+                    Versailles • Saint-Germain-en-Laye • Poissy • Sartrouville • Mantes-la-Jolie • Plaisir • Trappes • Conflans...
+                </p>
+                <br>
+                <a href="zone.html" class="btn-cta" style="background-color: var(--primary);">Voir toute la zone 78</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer (Identique) -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>TMT Électricité</h4>
+                <p>Votre partenaire confiance pour tous travaux d'électricité générale dans les Yvelines.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="depannage.html">Dépannage</a></li>
+                    <li><a href="installation.html">Installation</a></li>
+                    <li><a href="normes.html">Mise aux normes</a></li>
+                    <li><a href="zone.html">Zone d'intervention</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <ul>
+                    <li>📞 01 23 45 67 89</li>
+                    <li>📧 contact@tmt-electricite.fr</li>
+                    <li>📍 Yvelines (78), France</li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2023 TMT Électricité. Tous droits réservés.
+        </div>
+    </footer>
+</body>
+</html>
