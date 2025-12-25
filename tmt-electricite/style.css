@@ -24,79 +24,112 @@ ul { list-style: none; }
 img { max-width: 100%; height: auto; }
 
 /* HEADER */
+/* ================= HEADER & NAV ================= */
 header {
     background: var(--white);
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     position: sticky;
     top: 0;
     z-index: 1000;
+    padding: 0; /* On gère le padding dans le container */
 }
 
 .top-bar {
     background: var(--primary);
     color: var(--white);
-    padding: 10px 0;
+    padding: 8px 0;
     text-align: center;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
 }
 
 .nav-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* Pousse le logo à gauche et le menu à droite */
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 15px 20px;
+    padding: 10px 20px;
+    height: 80px; /* Force une hauteur fixe pour le header */
 }
 
-/* --- Cherchez la partie .logo existante et remplacez-la par ceci --- */
-
+/* --- LOGO --- */
 .logo {
-    display: flex;          /* Permet d'aligner l'image et le texte côte à côte */
-    align-items: center;    /* Centre verticalement l'image et le texte */
-    gap: 15px;              /* Espace entre l'image et le texte */
-    font-size: 1.5rem;
+    display: flex;
+    align-items: center; /* Centre verticalement l'image et le texte */
+    gap: 10px; /* Espace entre image et texte */
+    text-decoration: none;
+    height: 100%; /* Prend toute la hauteur disponible */
+}
+
+.logo img {
+    display: block;
+    max-height: 50px; /* HAUTEUR MAXIMALE : Empêche le logo d'être géant */
+    width: auto;      /* Garde les proportions */
+    object-fit: contain;
+}
+
+.logo span {
+    font-size: 1.2rem;
     font-weight: bold;
     color: var(--primary);
-    text-decoration: none;  /* Enlève le soulignement si présent */
+    white-space: nowrap; /* Empêche le texte de passer à la ligne */
 }
 
-/* Nouveau : on contrôle la taille de l'image pour ne pas casser le menu */
-.logo img {
-    height: 50px;           /* Hauteur fixe (ajustez selon votre logo, ex: 40px à 60px) */
-    width: auto;            /* Conserve les proportions */
-    object-fit: contain;    /* S'assure que l'image ne soit pas écrasée */
+/* --- MENU --- */
+nav ul { 
+    display: flex; 
+    gap: 20px; 
+    align-items: center; 
 }
 
-.logo span { 
-    color: var(--secondary); 
+nav a { 
+    font-weight: 500; 
+    transition: color 0.3s; 
+    font-size: 0.95rem;
 }
 
-/* Optionnel : Ajustement pour mobile pour que le logo ne soit pas trop gros */
-@media (max-width: 768px) {
-    .logo img {
-        height: 40px;
-    }
-    .logo {
-        font-size: 1.2rem;
-    }
-}
-}
-.logo span { color: var(--secondary); }
-
-nav ul { display: flex; gap: 20px; }
-nav a { font-weight: 500; transition: color 0.3s; }
 nav a:hover { color: var(--secondary); }
 
 .btn-cta {
     background: var(--accent);
     color: var(--white);
-    padding: 10px 20px;
-    border-radius: 5px;
+    padding: 8px 15px;
+    border-radius: 4px;
     font-weight: bold;
-    transition: background 0.3s;
 }
 .btn-cta:hover { background: var(--accent-hover); }
+
+/* ================= RESPONSIVE (MOBILE) ================= */
+@media (max-width: 768px) {
+    .nav-container {
+        height: auto; /* Hauteur flexible sur mobile */
+        flex-direction: column; /* Empile logo et menu */
+        padding: 15px;
+        gap: 15px;
+    }
+
+    .logo {
+        width: 100%;
+        justify-content: flex-start; /* Force l'alignement à GAUCHE sur mobile */
+    }
+    
+    .logo img {
+        max-height: 40px; /* Logo un peu plus petit sur mobile */
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center; /* Menu centré en dessous */
+        gap: 15px;
+        width: 100%;
+    }
+    
+    .btn-cta {
+        width: 100%;
+        text-align: center;
+        display: block;
+    }
+}
 
 /* HERO SECTION */
 .hero {
