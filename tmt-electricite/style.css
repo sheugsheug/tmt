@@ -1,4 +1,5 @@
 /* style.css */
+
 :root {
     --primary: #0F172A;
     --secondary: #0EA5E9;
@@ -23,15 +24,13 @@ a { text-decoration: none; color: inherit; }
 ul { list-style: none; }
 img { max-width: 100%; height: auto; }
 
-/* HEADER */
-/* ================= HEADER & NAV ================= */
+/* ================= HEADER & NAVIGATION ================= */
 header {
     background: var(--white);
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     position: sticky;
     top: 0;
     z-index: 1000;
-    padding: 0; /* On gère le padding dans le container */
 }
 
 .top-bar {
@@ -44,35 +43,27 @@ header {
 
 .nav-container {
     display: flex;
-    justify-content: space-between; /* Pousse le logo à gauche et le menu à droite */
-    align-items: center;
+    justify-content: space-between; /* Logo à gauche, Menu à droite */
+    align-items: center;            /* Centrage vertical */
     max-width: 1200px;
     margin: 0 auto;
     padding: 10px 20px;
-    height: 80px; /* Force une hauteur fixe pour le header */
+    min-height: 80px;               /* Hauteur minimale garantie */
 }
 
-/* --- LOGO --- */
+/* --- LOGO (Image) --- */
 .logo {
     display: flex;
-    align-items: center; /* Centre verticalement l'image et le texte */
-    gap: 10px; /* Espace entre image et texte */
+    align-items: center;
     text-decoration: none;
-    height: 100%; /* Prend toute la hauteur disponible */
+    /* Pas de largeur fixe, il prend la place de l'image */
 }
 
 .logo img {
     display: block;
-    max-height: 50px; /* HAUTEUR MAXIMALE : Empêche le logo d'être géant */
+    max-height: 60px; /* Taille MAX sur ordinateur */
     width: auto;      /* Garde les proportions */
     object-fit: contain;
-}
-
-.logo span {
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: var(--primary);
-    white-space: nowrap; /* Empêche le texte de passer à la ligne */
 }
 
 /* --- MENU --- */
@@ -87,51 +78,20 @@ nav a {
     transition: color 0.3s; 
     font-size: 0.95rem;
 }
-
 nav a:hover { color: var(--secondary); }
 
+/* BOUTON CTA (DEVIS) */
 .btn-cta {
     background: var(--accent);
     color: var(--white);
-    padding: 8px 15px;
-    border-radius: 4px;
+    padding: 10px 20px;
+    border-radius: 5px;
     font-weight: bold;
+    transition: background 0.3s;
 }
 .btn-cta:hover { background: var(--accent-hover); }
 
-/* ================= RESPONSIVE (MOBILE) ================= */
-@media (max-width: 768px) {
-    .nav-container {
-        height: auto; /* Hauteur flexible sur mobile */
-        flex-direction: column; /* Empile logo et menu */
-        padding: 15px;
-        gap: 15px;
-    }
-
-    .logo {
-        width: 100%;
-        justify-content: flex-start; /* Force l'alignement à GAUCHE sur mobile */
-    }
-    
-    .logo img {
-        max-height: 40px; /* Logo un peu plus petit sur mobile */
-    }
-
-    nav ul {
-        flex-wrap: wrap;
-        justify-content: center; /* Menu centré en dessous */
-        gap: 15px;
-        width: 100%;
-    }
-    
-    .btn-cta {
-        width: 100%;
-        text-align: center;
-        display: block;
-    }
-}
-
-/* HERO SECTION */
+/* ================= HERO & SECTIONS ================= */
 .hero {
     background: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.8)), url('https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=1920&q=80');
     background-size: cover;
@@ -144,7 +104,6 @@ nav a:hover { color: var(--secondary); }
 .hero h1 { font-size: 3rem; margin-bottom: 20px; }
 .hero p { font-size: 1.2rem; margin-bottom: 30px; max-width: 700px; margin-left: auto; margin-right: auto; }
 
-/* SECTIONS */
 section { padding: 60px 20px; max-width: 1200px; margin: 0 auto; }
 
 .section-title {
@@ -154,7 +113,7 @@ section { padding: 60px 20px; max-width: 1200px; margin: 0 auto; }
 .section-title h2 { color: var(--primary); font-size: 2.2rem; margin-bottom: 10px; }
 .section-title .line { width: 60px; height: 4px; background: var(--secondary); margin: 0 auto; }
 
-/* GRIDS */
+/* ================= GRIDS & CARDS ================= */
 .grid-3 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -173,7 +132,7 @@ section { padding: 60px 20px; max-width: 1200px; margin: 0 auto; }
 .card h3 { color: var(--primary); margin-bottom: 15px; }
 .card-icon { font-size: 2rem; color: var(--secondary); margin-bottom: 15px; display: block; }
 
-/* FEATURES / AVANTAGES */
+/* FEATURES */
 .features-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -212,7 +171,7 @@ button[type="submit"] {
 }
 button[type="submit"]:hover { background: var(--secondary); }
 
-/* FOOTER */
+/* ================= FOOTER ================= */
 footer {
     background: var(--primary);
     color: var(--white);
@@ -235,9 +194,41 @@ footer {
     font-size: 0.9rem;
 }
 
-/* RESPONSIVE NAV */
+/* ================= RESPONSIVE (MOBILE) ================= */
 @media (max-width: 768px) {
-    .nav-container { flex-direction: column; gap: 15px; }
-    nav ul { flex-wrap: wrap; justify-content: center; gap: 15px; }
+    .nav-container { 
+        flex-direction: column; /* Empile les éléments */
+        gap: 15px; 
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    
+    /* Force le logo à rester à GAUCHE sur mobile */
+    .logo {
+        width: 100%; /* Prend toute la largeur */
+        display: flex;
+        justify-content: flex-start; /* Alignement à gauche */
+    }
+
+    /* Réduit un peu le logo sur mobile */
+    .logo img {
+        max-height: 45px; 
+    }
+
+    /* Centre le menu en dessous */
+    nav ul { 
+        flex-wrap: wrap; 
+        justify-content: center; 
+        gap: 15px; 
+        width: 100%;
+    }
+    
+    /* Bouton CTA prend toute la largeur sur mobile */
+    .btn-cta {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
     .hero h1 { font-size: 2rem; }
 }
