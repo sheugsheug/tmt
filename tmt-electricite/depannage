@@ -8,15 +8,18 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Barre d'information -->
-    <div class="top-bar">Intervention rapide 78 Yvelines | 📞 01 23 45 67 89</div>
+    <!-- Barre d'information supérieure -->
+    <div class="top-bar">Intervention rapide 78 Yvelines | 📞 07 86 72 31 06</div>
 
-    <!-- Header (Identique à l'accueil avec Logo Image) -->
+    <!-- Header avec Logo Image uniquement -->
     <header>
         <div class="nav-container">
+            <!-- Logo Image sans texte -->
             <a href="index.html" class="logo">
-                <img src="Gemini_Generated_Image_w0khqfw0khqfw0kh.png" alt="Logo TMT Électricité" style="max-height: 60px; width: auto;">
+                <img src="Gemini_Generated_Image_w0khqfw0khqfw0kh.png" alt="Logo TMT Électricité" style="max-height: 150px; width: auto;">
             </a>
+
+            <!-- Navigation -->
             <nav>
                 <ul>
                     <li><a href="index.html">Accueil</a></li>
