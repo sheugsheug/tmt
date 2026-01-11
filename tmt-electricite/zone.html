@@ -5,13 +5,32 @@
     <title>Contact & Devis Électricien Yvelines | LMTE Électricité</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        /* Petit ajout pour s'assurer que l'image s'adapte parfaitement à la colonne */
+        /* Ajustement pour passer à 2 colonnes et gérer l'image */
+        .grid-contact {
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* Deux colonnes égales */
+            gap: 40px;
+            align-items: start;
+        }
+
+        .img-container {
+            text-align: right; /* Aligne l'image à droite dans sa colonne */
+        }
+
         .img-contact {
-            width: 100%;
-            height: 100%;
-            object-fit: cover; /* L'image remplit l'espace sans se déformer */
+            max-width: 100%; /* L'image ne dépasse pas sa colonne */
+            height: auto;    /* Garde les proportions d'origine */
+            display: block;
+            margin-left: auto; /* Pousse l'image vers la droite */
             border-radius: 8px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        /* Responsive : sur mobile, on repasse sur une seule colonne */
+        @media (max-width: 768px) {
+            .grid-contact {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
@@ -42,59 +61,29 @@
         <section>
             <div class="section-title">
                 <h1>Contactez-nous</h1>
-                <p>Demande de devis gratuit ou question technique</p>
+                <p>Retrouvez nos coordonnées et notre zone d'intervention</p>
             </div>
 
-            <!-- La grille passe ici à 3 colonnes distinctes -->
-            <div class="grid-3">
-                <!-- Colonne 1 : Coordonnées -->
+            <!-- Nouvelle structure à 2 colonnes -->
+            <div class="grid-contact">
+                
+                <!-- Colonne Gauche : Coordonnées -->
                 <div>
                     <h3>Nos Coordonnées</h3>
                     <p><strong>Téléphone :</strong> 07 86 72 31 06</p>
                     <p><strong>Email :</strong> contact@lmte-electricite.fr</p>
                     <hr style="margin: 20px 0;">
-                    <h3>Horaires</h3>
+                    <h3>Horaires d'ouverture</h3>
                     <p>Lundi - Vendredi : 8h00 - 19h00</p>
                     <p>Samedi : 9h00 - 17h00</p>
                     <p>Dimanche : Urgences uniquement</p>
                 </div>
 
-                <!-- Colonne 2 : Formulaire (on a enlevé le "span 2" pour laisser de la place à l'image) -->
-                <div>
-                    <form action="#" method="POST">
-                        <div class="form-group">
-                            <label for="name">Nom complet</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="phone">Téléphone</label>
-                            <input type="tel" id="phone" name="phone" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="subject">Type de demande</label>
-                            <select id="subject" name="subject">
-                                <option value="devis">Demande de devis</option>
-                                <option value="depannage">Dépannage / Urgence</option>
-                                <option value="renovation">Rénovation</option>
-                                <option value="autre">Autre question</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" rows="5" placeholder="Décrivez votre projet ou votre panne..."></textarea>
-                        </div>
-                        <button type="submit">Envoyer ma demande</button>
-                    </form>
-                </div>
-
-                <!-- Colonne 3 : L'image des régions (à droite) -->
-                <div>
+                <!-- Colonne Droite : L'image des régions -->
+                <div class="img-container">
                     <img src="regions.webp" alt="Zones d'intervention Yvelines 78" class="img-contact">
                 </div>
+
             </div>
         </section>
     </main>
