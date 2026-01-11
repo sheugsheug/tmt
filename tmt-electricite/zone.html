@@ -2,13 +2,23 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Zone d'Intervention Électricien Yvelines 78 | LMTE</title>
+    <title>Contact & Devis Électricien Yvelines | LMTE Électricité</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Petit ajout pour s'assurer que l'image s'adapte parfaitement à la colonne */
+        .img-contact {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* L'image remplit l'espace sans se déformer */
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+    </style>
 </head>
 <body>
     <!-- HEADER -->
     <div class="top-bar">Intervention rapide 78 Yvelines | 📞 07 86 72 31 06</div>
-    <header>
+   <header>
         <div class="nav-container">
             <!-- Logo Image sans texte -->
             <a href="index.html" class="logo">
@@ -31,26 +41,59 @@
     <main>
         <section>
             <div class="section-title">
-                <h1>Notre Zone d'Intervention</h1>
-                <p>Nous nous déplaçons dans tout le département des Yvelines (78).</p>
+                <h1>Contactez-nous</h1>
+                <p>Demande de devis gratuit ou question technique</p>
             </div>
-            
+
+            <!-- La grille passe ici à 3 colonnes distinctes -->
             <div class="grid-3">
+                <!-- Colonne 1 : Coordonnées -->
                 <div>
-                    <h3>Principales villes desservies :</h3>
-                    <ul style="line-height: 2;">
-                        <li>📍 Versailles</li>
-                        <li>📍 Saint-Germain-en-Laye</li>
-                        <li>📍 Sartrouville</li>
-                        <li>📍 Mantes-la-Jolie</li>
-                        <li>📍 Poissy</li>
-                        <li>📍 Conflans-Sainte-Honorine</li>
-                        <li>📍 Montigny-le-Bretonneux</li>
-                        <li>📍 Houilles, Plaisir, Chatou...</li>
-                    </ul>
+                    <h3>Nos Coordonnées</h3>
+                    <p><strong>Téléphone :</strong> 07 86 72 31 06</p>
+                    <p><strong>Email :</strong> contact@lmte-electricite.fr</p>
+                    <hr style="margin: 20px 0;">
+                    <h3>Horaires</h3>
+                    <p>Lundi - Vendredi : 8h00 - 19h00</p>
+                    <p>Samedi : 9h00 - 17h00</p>
+                    <p>Dimanche : Urgences uniquement</p>
                 </div>
-                <div style="grid-column: span 2; background: #eee; min-height: 300px; display: flex; align-items: center; justify-content: center; border-radius: 8px;">
-                    <p style="color: #666;">[Espace réservé pour intégration Google Maps]</p>
+
+                <!-- Colonne 2 : Formulaire (on a enlevé le "span 2" pour laisser de la place à l'image) -->
+                <div>
+                    <form action="#" method="POST">
+                        <div class="form-group">
+                            <label for="name">Nom complet</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Téléphone</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Type de demande</label>
+                            <select id="subject" name="subject">
+                                <option value="devis">Demande de devis</option>
+                                <option value="depannage">Dépannage / Urgence</option>
+                                <option value="renovation">Rénovation</option>
+                                <option value="autre">Autre question</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Décrivez votre projet ou votre panne..."></textarea>
+                        </div>
+                        <button type="submit">Envoyer ma demande</button>
+                    </form>
+                </div>
+
+                <!-- Colonne 3 : L'image des régions (à droite) -->
+                <div>
+                    <img src="regions.webp" alt="Zones d'intervention Yvelines 78" class="img-contact">
                 </div>
             </div>
         </section>
